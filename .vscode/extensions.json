@@ -1,0 +1,4 @@
+{
+  "recommendations": ["astro-build.astro-vscode", "aaron-bond.better-comments"],
+  "unwantedRecommendations": []
+}

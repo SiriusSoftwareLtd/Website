@@ -1,0 +1,23 @@
+---
+import Pill from "../components/Pill.astro";
+import Notification from "./Notification.astro";
+---
+
+<section id="notificationSection" class="relative flex h-[110vh] w-screen flex-col items-center overflow-hidden lg:h-screen 2xl:flex-row">
+  <div class="flex max-w-2xl flex-col px-4 text-left sm:py-20 sm:px-6 lg:max-w-7xl lg:!pl-32">
+    <div class="m-0 flex flex-initial flex-row justify-start border-0 p-0 align-baseline">
+      <Pill text="Pro" />
+    </div>
+    <h2 class="mt-4 text-4xl font-bold tracking-tight text-white sm:text-6xl">Smart by design</h2>
+    <p class="text-desc mx-auto mt-4">
+      Sirius runs tasks in the background periodically to check for certain things like game moderators joining your server, sounds playing too loud and other users spamming the chat system.
+      <br /><br />
+      When these background checks are triggered, they will trigger Sirius to act upon them, for example, Sirius will suppress loud audios if it's detected that the audio playing is too loud.
+    </p>
+  </div>
+  <div class="flex w-full flex-col items-center justify-center gap-4 pt-6 lg:block lg:gap-0 lg:pt-0">
+    <Notification id="soundNotif" logo="sound" title="Sound Suppressed" description="A high volume audio is being played (Music) and it has been suppressed" />
+    <Notification id="spamNotif" logo="spam" title="Spam Detection" description="We've automatically muted @Jack for spamming the chat system, they will be unmuted in 90 seconds" />
+    <Notification id="modNotif" logo="moderator" title="Moderator Detection" description="We've identified a moderator in the server you're in, see the prompt at the top of your screen to take action" />
+  </div>
+</section>

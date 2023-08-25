@@ -1,0 +1,12 @@
+---
+const { image, title, description } = Astro.props;
+---
+
+<div class="undeniablyProCards relative rounded-xl will-change-transform max-md:inline-block max-md:snap-center max-md:first-of-type:ml-[50%] max-md:last-of-type:mr-[50%] md:absolute">
+  <div class="h-[201.94px] w-[359px] overflow-hidden rounded-[10px] bg-black bg-opacity-50 bg-cover bg-center bg-blend-overlay saturate-200 transition-all md:h-[400px] md:w-[711.11px]" style={`background-image: url(${image});`}>
+    <div class="flex flex-col items-start justify-start pt-4 pl-6 text-left align-middle md:pt-8 md:pl-11">
+      <h4 class="!font-sfdisplay text-xl font-bold text-white md:text-3xl">{title}</h4>
+      <p class="!font-sfdisplay text-base text-white text-opacity-60 md:text-lg">{description}</p>
+    </div>
+  </div>
+</div>

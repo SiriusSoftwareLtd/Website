@@ -1,0 +1,55 @@
+@import url("https://cdn.sirius.menu/assets/styles/SF-Pro-Stylesheet.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Below 19pt SF Pro Text font family */
+.text-xs,
+.text-sm,
+.text-base,
+.text-lg,
+.text-xl,
+.text-2xl {
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+}
+
+/* Above 20pt SF Pro Display font family */
+.text-3xl,
+.text-4xl,
+.text-5xl,
+.text-6xl,
+.text-7xl,
+.text-8xl,
+.text-9xl {
+  font-family: "SF Pro Display", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+}
+
+/* invisible scrollbars */
+/* ::-webkit-scrollbar {
+  display: none;
+}
+*/
+
+@layer base {
+  html {
+    font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  }
+}
+
+/* hide-scroll-bar */
+@layer utilities {
+  .hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .text-desc {
+    @apply max-w-xl !font-sfdisplay text-lg font-semibold text-neutral-500 lg:text-xl;
+  }
+}

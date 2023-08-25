@@ -1,0 +1,15 @@
+---
+const { id, logo, title, description } = Astro.props;
+
+const { default: innerHTML } = await import(`../../public/assets/images/svg/notification/${logo}.svg?raw`);
+---
+
+<div id={id} class="notificationBanner h-[119.67px] w-[359px] max-w-md scale-100 rounded-lg border border-[#5D5D5D] border-opacity-80 bg-[#232323] bg-opacity-50 p-6 pt-5 text-left backdrop-blur-sm backdrop-saturate-150 max-md:first-of-type:translate-y-12 max-md:last-of-type:-translate-y-12 md:h-[136.5px] md:w-[442.5px] lg:absolute lg:translate-x-10 lg:translate-y-10">
+  <div class="flex flex-col justify-start">
+    <div class="flex flex-row items-center align-middle text-[#f0f0f0]">
+      <span set:html={innerHTML} class="mr-2 h-7 w-7 md:mr-3" />
+      <h5 class="text-lg font-semibold md:text-2xl">{title}</h5>
+    </div>
+  </div>
+  <p class="mt-[2px] text-base leading-4 text-[#f0f0f0] opacity-60 md:text-lg md:leading-5">{description}</p>
+</div>

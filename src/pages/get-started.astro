@@ -1,0 +1,45 @@
+---
+import Headers from "../layouts/Headers.astro";
+import Navbar from "../components/Navbar.astro";
+import "prism-themes/themes/prism-vsc-dark-plus.css";
+
+export interface Props {
+  title: string;
+}
+---
+
+<html lang="en" class="hide-scroll-bar h-screen w-screen bg-black">
+  <Headers title="Get Started" description="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts." image="/assets/images/png/embedBanner.png" />
+  <body class="flex h-full w-full items-center justify-center">
+    <Navbar />
+
+    <div class="mx-auto flex h-[calc(100%-56px)] w-full max-w-screen-md items-center justify-center px-4 text-left text-[#979797] md:px-8">
+      <div class="flex flex-col">
+        <h1 class="mb-4 text-4xl font-bold text-white">Get Started</h1>
+        <div class="flex items-center">
+          <div class="relative">
+            <pre style="user-select: none;" class="language-lua peer relative z-0 max-w-xs cursor-pointer rounded-md transition-opacity duration-300 hover:opacity-40 md:max-w-none" data-output="2-17"><code class="language-lua"><span class="token function">loadstring</span><span class="token punctuation">(</span>game<span class="token punctuation">:</span><span class="token function">HttpGet</span><span class="token punctuation">(</span><span class="token string">'https://sirius.menu/sirius'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+            <span id="icon" style="transition-property: opacity, transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);transition-duration: 150ms;" class="pointer-events-none absolute left-1/2 top-1/2 ml-2 flex -translate-x-1/2 -translate-y-1/2 flex-row-reverse items-center justify-center gap-2 p-2 text-neutral-400 opacity-0 duration-300 peer-hover:scale-100 peer-hover:opacity-100">
+              Tap to copy
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.9736" height="22.1396"> <g> <rect height="22.1396" opacity="0" width="17.9736" x="0" y="0"></rect> <path d="M4.2627 2.75977L4.2627 14.9678C4.2627 16.7959 5.16797 17.7275 6.9873 17.7275L15.249 17.7275C17.0596 17.7275 17.9736 16.7959 17.9736 14.9678L17.9736 2.75977C17.9736 0.922852 17.0596 0 15.249 0L6.9873 0C5.16797 0 4.2627 0.922852 4.2627 2.75977ZM8.97363 3.01465C8.58691 3.01465 8.41113 2.75977 8.41113 2.49609L8.41113 2.31152C8.41113 2.03906 8.58691 1.79297 8.97363 1.79297L13.2627 1.79297C13.6406 1.79297 13.8252 2.03906 13.8252 2.31152L13.8252 2.49609C13.8252 2.75977 13.6406 3.01465 13.2627 3.01465Z" fill="currentColor" fill-opacity="0.85"></path> <path d="M0 19.3535C0 21.1904 0.905273 22.1133 2.72461 22.1133L10.9863 22.1133C12.8057 22.1133 13.7109 21.1816 13.7109 19.3535L13.7109 12.4893C13.7109 11.3643 13.5791 10.8721 12.876 10.1514L8.0332 5.2207C7.36523 4.53516 6.81152 4.38574 5.82715 4.38574L2.72461 4.38574C0.914062 4.38574 0 5.30859 0 7.14551Z" fill="#1e1e1e"></path> <path d="M0 19.3535C0 21.1904 0.905273 22.1133 2.72461 22.1133L10.9863 22.1133C12.8057 22.1133 13.7109 21.1816 13.7109 19.3535L13.7109 12.4893C13.7109 11.3643 13.5791 10.8721 12.876 10.1514L8.0332 5.2207C7.36523 4.53516 6.81152 4.38574 5.82715 4.38574L2.72461 4.38574C0.914062 4.38574 0 5.30859 0 7.14551ZM1.41504 19.3271L1.41504 7.16309C1.41504 6.30176 1.88086 5.80078 2.79492 5.80078L5.67773 5.80078L5.67773 10.8984C5.67773 12.0059 6.24023 12.5596 7.33008 12.5596L12.2959 12.5596L12.2959 19.3271C12.2959 20.2061 11.8213 20.6982 10.916 20.6982L2.78613 20.6982C1.88086 20.6982 1.41504 20.2061 1.41504 19.3271ZM7.49707 11.2324C7.14551 11.2324 7.00488 11.0918 7.00488 10.7402L7.00488 6.12598L12.0234 11.2324Z" fill="currentColor" fill-opacity="0.85"></path></g></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let code = document.querySelector("pre");
+      let icon = document.getElementById("icon");
+      let defaultIcon = icon.innerHTML;
+      code.addEventListener("click", () => {
+        navigator.clipboard.writeText("loadstring(game:HttpGet('https://sirius.menu/sirius'))()");
+        icon.classList.add("!text-green-400");
+        icon.innerHTML = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.9062" height="23.918"> <g> <rect height="23.918" opacity="0" width="23.9062" x="0" y="0"/> <path d="M11.9531 23.9062C18.4922 23.9062 23.9062 18.4805 23.9062 11.9531C23.9062 5.41406 18.4805 0 11.9414 0C5.41406 0 0 5.41406 0 11.9531C0 18.4805 5.42578 23.9062 11.9531 23.9062ZM11.9531 21.9141C6.42188 21.9141 2.00391 17.4844 2.00391 11.9531C2.00391 6.42188 6.41016 1.99219 11.9414 1.99219C17.4727 1.99219 21.9141 6.42188 21.9141 11.9531C21.9141 17.4844 17.4844 21.9141 11.9531 21.9141Z" fill="currentColor" fill-opacity="0.85"/> <path d="M10.6641 17.5195C11.0508 17.5195 11.3789 17.332 11.6133 16.9688L16.9688 8.54297C17.0977 8.30859 17.25 8.05078 17.25 7.79297C17.25 7.26562 16.7812 6.92578 16.2891 6.92578C15.9961 6.92578 15.7031 7.11328 15.4805 7.45312L10.6172 15.2578L8.30859 12.2695C8.02734 11.8945 7.76953 11.8008 7.44141 11.8008C6.9375 11.8008 6.53906 12.2109 6.53906 12.7266C6.53906 12.9844 6.64453 13.2305 6.80859 13.4531L9.66797 16.9688C9.96094 17.3555 10.2773 17.5195 10.6641 17.5195Z" fill="currentColor" fill-opacity="0.85"/> </g> </svg>`;
+        setTimeout(() => {
+          icon.innerHTML = defaultIcon;
+          icon.classList.remove("!text-green-400");
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+---
+import Card from "./Card.astro";
+---
+
+<section id="hero" class="relative h-screen w-full overflow-hidden md:flex md:gap-60">
+  <div class="relative z-10 flex h-full flex-col items-center justify-center text-left md:ml-24 md:items-start">
+    <h1 class="scale-150 text-7xl font-bold text-white opacity-0 transition-all delay-500 duration-1000 ease-in-out md:text-9xl">Sirius</h1>
+    <p id="heroTitleP" class="scale-150 !font-sfdisplay text-lg text-white opacity-0 transition-all delay-700 duration-1000 ease-in-out md:text-2xl">The mighty all-in-one</p>
+    <button id="purchaseBtn" type="button" class="m-0 mt-3 flex flex-initial scale-150 flex-row justify-center border-0 p-0 align-baseline opacity-0 delay-1000 duration-1000 ease-in-out">
+      <span class="!mx-0 mr-2 flex items-center rounded-full bg-white bg-opacity-10 px-14 py-1.5 font-sfdisplay text-xs font-medium tracking-normal text-white text-opacity-80 transition-all duration-300 hover:bg-opacity-20 hover:text-opacity-100">Buy</span>
+    </button>
+  </div>
+
+  <div class="relative z-10 hidden h-full w-full items-center justify-center text-left md:flex xl:mr-32 xl:justify-end">
+    <div class="px-4 py-5">
+      <h2 id="cardsTitle" class="pb-4 text-lg font-bold text-white opacity-0 transition-opacity delay-[1500ms] duration-[600ms] ease-in-out">What's it all about?</h2>
+      <ul id="cards" class="grid max-w-3xl grid-flow-row grid-cols-3 grid-rows-5 gap-4 text-white/80">
+        <Card class="row-span-3 delay-[1000ms]" title="Spatial Shield" description="Protection in real-time from loud sounds or noises that could damage your hearing." />
+        <Card class="row-span-2 delay-[1035ms]" title="ScriptSearch" description="Immediate in-game access to one of the largest library of scripts, in a single click." />
+        <Card class="row-span-2 delay-[1070ms]" title="Moderator Detection" description="Worried someone'll catch you? Forget it, Sirius will notify you when a potential moderator joins." />
+        <Card class="col-start-1 row-span-2 row-start-4 delay-[1105ms]" title="Pro Game Scripts" description="Access to a wide range of perfectly crafted scripts, for your entertainment." />
+        <Card class="col-start-2 row-span-3 row-start-3 delay-[1140ms]" title="Critical Notifications" description="Sirius will notify you if you have low FPS or high ping, and will take action automatically to counter it." />
+        <Card class="col-start-3 row-span-2 row-start-3 delay-[1175ms]" title="Unrivaled Interface" description="There's nothing like it. Sirius has defined the interface game for almost 2 years, and it impresses every single time." />
+        <Card class="col-start-3 row-start-5 delay-[1210ms]" description="And much more..." />
+      </ul>
+    </div>
+  </div>
+  <!-- blurred frosted blob 1 purple/blue-->
+  <div class="heroBlobs absolute left-[50%] top-[50%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 scale-150 transform overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_50%,_#444bf7,_#444bf74d)] opacity-0 blur-[80px] saturate-200 transition-all duration-1000 ease-in-out lg:left-[70%] lg:h-[700px] lg:w-[700px]"></div>
+
+  <!-- blurred frosted blob 2 red-->
+  <div class="heroBlobs absolute bottom-[40%] right-[40%] h-[300px] w-[300px] translate-x-1/2 translate-y-1/2 scale-150 transform overflow-hidden rounded-full bg-[radial-gradient(circle_at_50%_50%,_#f74444,_#f744444d)] opacity-0 blur-[80px] saturate-200 transition-all delay-200 duration-1000 ease-in-out lg:right-[20%] lg:h-[600px] lg:w-[600px]"></div>
+</section>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const hero = document.getElementById("hero");
+    const heroElements = hero.querySelectorAll(".opacity-0");
+    const heroTitleP = document.getElementById("heroTitleP");
+    const purchaseBtn = document.getElementById("purchaseBtn");
+    const cardsTitle = document.getElementById("cardsTitle");
+    const cards = document.getElementById("cards").querySelectorAll("li");
+    const heroBlobs = document.querySelectorAll(".heroBlobs");
+
+    heroElements.forEach((element) => {
+      element.classList.remove("opacity-0", "scale-150");
+    });
+    heroTitleP.classList.add("opacity-70");
+
+    heroBlobs.forEach((blob) => {
+      blob.classList.remove("opacity-0", "scale-150");
+    });
+
+    cards.forEach((card) => {
+      // remove the !opacity-0 class
+      card.classList.remove("!opacity-0", "scale-125");
+    });
+
+    cardsTitle.classList.remove("opacity-0");
+
+    // Buy button, scroll to buy section
+    purchaseBtn.addEventListener("click", () => {
+      const buySection = document.getElementById("featureList");
+      buySection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    setTimeout(() => {
+      heroBlobs[0].classList.add("animate-pulse-subtle");
+      heroBlobs[1].classList.add("animate-pulse-subtle-delayed");
+    }, 1000);
+  });
+</script>

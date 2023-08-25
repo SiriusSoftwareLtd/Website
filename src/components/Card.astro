@@ -1,0 +1,8 @@
+---
+const { class: className, title, description } = Astro.props;
+---
+
+<li class:list={["flex scale-125 text-white/80 ease-in-out !opacity-0 transition-all duration-[600ms] justify rounded-lg bg-white/5 p-4 text-left flex-col flex-shrink font-sfdisplay justify-start", className]}>
+  <h3 class:list={title ? "text-lg mb-2 font-bold" : "hidden"}>{title}</h3>
+  <p class="text-sm font-medium opacity-70">{description}</p>
+</li>

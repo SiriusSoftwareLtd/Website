@@ -1,0 +1,28 @@
+---
+import Cards from "./Cards.astro";
+import Pill from "./Pill.astro";
+
+const imageBase = "/assets/images/png/games/";
+---
+
+<section id="cardsSection" class="relative h-[90vh] w-screen overflow-hidden md:h-[80vh]">
+  <div class="m-0 flex w-full flex-col items-center justify-center px-4 pt-10 text-center sm:px-6 sm:pt-20 lg:px-8">
+    <Pill text="Pro" />
+    <h2 class="mt-4 text-4xl font-bold tracking-tight text-white sm:text-6xl">Undeniably Pro.</h2>
+    <p class="text-desc mt-4">Leaping forward with the most powerful scripts for the most popular games, with Pro, you're unstoppable.</p>
+  </div>
+
+  <div id="cardsWrapper" class="h-full overflow-hidden">
+    <div class="hide-scroll-bar h-full py-10 text-center max-md:flex max-md:w-full max-md:snap-x max-md:snap-mandatory max-md:flex-row max-md:gap-6 max-md:overflow-x-scroll max-md:scroll-smooth sm:py-20">
+      <Cards image={imageBase + "PhantomForces.png"} alt="Phantom Forces" title="Phantom Forces" description="StyLiS Studios" />
+      <Cards image={imageBase + "Arsenal.png"} alt="Arsenal" title="Arsenal" description="ROLVe" />
+      <Cards image={imageBase + "Doors.png"} alt="Doors" title="Doors" description="LSPLASH" />
+      <Cards image={imageBase + "BadBusiness.png"} alt="Bad Business" title="Bad Business" description="Rudimentality" />
+      <Cards image={imageBase + "MurderMystery.png"} alt="Murder Mystery 2" title="Murder Mystery 2" description="Nikilis" />
+      <Cards image={imageBase + "TowerOfHell.png"} alt="Tower of Hell" title="Tower of Hell" description="YXCeptional Studios" />
+      <Cards image={imageBase + "Frontlines.png"} alt="FRONTLINES" title="FRONTLINES" description="MAXIMILLIAN" />
+      <Cards image={imageBase + "BigPaintball.png"} alt="Big Paintball" title="Big Paintball" description="BIG Games™" />
+      <Cards image={imageBase + "ProjectLazarus.png"} alt="Project Lazarus" title="Project Lazarus" description="logitech101" />
+    </div>
+  </div>
+</section>

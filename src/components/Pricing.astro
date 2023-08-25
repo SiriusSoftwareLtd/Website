@@ -1,0 +1,214 @@
+---
+import Features from "./Features.astro";
+import Pill from "./Pill.astro";
+---
+
+<section id="featureList" class="max-md:pt-44">
+  <div class="flex w-full flex-col items-center justify-center px-4 py-10 text-center sm:px-6 sm:py-20 lg:px-8">
+    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Which tier is right for you?</h2>
+    <p class="text-desc mt-4">From casual to pro users, find the license tier tailored for you. Examine each tier's features and pinpoint the perfect match to elevate your experience.</p>
+  </div>
+  <!-- xs to lg -->
+  <section class="mx-auto w-screen space-y-16 py-16 sm:py-6 lg:hidden">
+    <table class="h-full w-full">
+      <thead>
+        <tr>
+          <td><Pill text="BETA" /></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="w-1/3 py-2 text-center text-2xl font-medium leading-6 text-white sm:px-6" scope="col">Free</th>
+
+          <th class="w-1/3 py-2 text-center text-2xl font-medium leading-6 text-white sm:px-6" scope="col">Essential</th>
+
+          <th class="w-1/3 py-2 text-center text-2xl font-medium leading-6 text-white sm:px-6" scope="col">Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="h-full pb-4 text-center align-top sm:px-3">
+            <div class="flex flex-col items-center text-center">
+              <p class="text-desc !text-sm">The only script you'll need. Ever.</p>
+              <p class="pb-2 pt-6">
+                <span class="text-sm text-neutral-500">$0 <sub class="text-[10px] text-neutral-500"></sub></span>
+              </p>
+              <a href="https://sirius.menu/get-started/" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Get</a>
+            </div>
+          </td>
+
+          <td class="h-full pb-4 text-center align-top sm:px-3">
+            <div class="flex flex-col items-center text-center">
+              <p class="text-desc !text-sm">Enhance your experience.</p>
+              <p class="pb-2 pt-6">
+                <span class="text-sm text-neutral-500">From $8.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://store.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
+            </div>
+          </td>
+
+          <td class="h-full pb-4 text-center align-top sm:px-3">
+            <div class="flex flex-col items-center text-center">
+              <p class="text-desc !text-sm">The ultimate suite of features.</p>
+              <p class="pb-2 pt-6">
+                <span class="text-sm text-neutral-500">From $17.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
+              </p>
+              <button onclick="window.location.href = 'https://store.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <div class="w-1/2 border-t border-white"></div>
+          </td>
+          <td align="center">
+            <div class="w-1/2 border-t border-white"></div>
+          </td>
+          <td align="center">
+            <div class="w-1/2 border-t border-white"></div>
+          </td>
+        </tr>
+        <Features />
+        <tr>
+          <td align="center">
+            <div class="w-1/2 border-t border-white"></div>
+          </td>
+          <td align="center">
+            <div class="w-1/2 border-t border-white"></div>
+          </td>
+          <td align="center">
+            <div class="w-1/2 border-t border-white"></div>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td align="center" colspan="3">
+            <div class="w-1/2 py-6">
+              <p class="text-center text-sm text-neutral-500"><sup class="text-[10px]">1</sup> All licenses last forever. <br /> Price depends on the purchase method you choose.</p>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <!-- lg+ -->
+  <div class="hidden lg:block">
+    <table class="h-full w-full table-fixed">
+      <thead>
+        <tr>
+          <td class="pb-4"><Pill text="BETA" /></td>
+          <td class="pb-4"></td>
+          <td class="pb-4"></td>
+        </tr>
+        <tr>
+          <th class="w-1/4 px-6 py-2" scope="col"
+            ><div class="flex flex-col items-center gap-4 text-center">
+              <span class="line-throug block text-center text-4xl font-medium leading-6 text-white">Free</span>
+            </div>
+          </th>
+          <th class="w-1/4 px-6 py-2 text-center text-4xl font-medium leading-6 text-white" scope="col">Essential</th>
+
+          <th class="w-1/4 px-6 py-2 text-center text-4xl font-medium leading-6 text-white" scope="col">Pro</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td class="h-full px-6 text-center align-top">
+              <div class="flex flex-col items-center text-center">
+                <p class="text-desc !text-lg">The only script you'll need. Ever.</p>
+              </div>
+            </td>
+
+            <td class="h-full px-6 text-center align-top">
+              <div class="flex flex-col items-center text-center">
+                <p class="text-desc !text-lg">Enhance your experience.</p>
+              </div>
+            </td>
+
+            <td class="h-full px-6 text-center align-top">
+              <div class="flex flex-col items-center text-center">
+                <p class="text-desc !text-lg">The ultimate suite of features.</p>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="h-full px-6 pb-8 text-center align-top">
+              <div class="text-center">
+                <p class="pb-2 pt-6">
+                  <span class="text-sm text-neutral-500">$0.00<sub class="text-[7px] text-neutral-500"></sub></span>
+                </p>
+                <a href="https://sirius.menu/get-started/" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Get</a>
+              </div>
+            </td>
+
+            <td class="h-full px-6 pb-8 text-center align-top">
+              <div class="text-center">
+                <p class="pb-2 pt-6">
+                  <span class="text-sm text-neutral-500">From $8.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
+                </p>
+                <button onclick="window.location.href = 'https://store.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
+              </div>
+            </td>
+
+            <td class="h-full px-6 pb-8 text-center align-top">
+              <div class="text-center">
+                <p class="pb-2 pt-6">
+                  <span class="text-sm text-neutral-500">From $17.99 <sub class="text-[10px] text-neutral-500">1</sub></span>
+                </p>
+                <button onclick="window.location.href = 'https://store.sirius.menu/';" class="inline-block min-w-[23px] cursor-pointer whitespace-nowrap rounded-full border-0 bg-[#0071e3] px-[11px] py-1 text-center text-sm font-normal text-white outline-0 transition-all duration-500 [letter-spacing:-0.01em] hover:bg-[#147ce5]">Buy</button>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center">
+              <div class="w-1/2 border-t border-white"></div>
+            </td>
+            <td align="center">
+              <div class="w-1/2 border-t border-white"></div>
+            </td>
+            <td align="center">
+              <div class="w-1/2 border-t border-white"></div>
+            </td>
+          </tr>
+
+          <Features />
+          <tr>
+            <td align="center">
+              <div class="w-1/2 border-t border-white"></div>
+            </td>
+            <td align="center">
+              <div class="w-1/2 border-t border-white"></div>
+            </td>
+            <td align="center">
+              <div class="w-1/2 border-t border-white"></div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td align="center" colspan="3">
+              <div class="w-1/2 py-6">
+                <p class="text-center text-sm text-neutral-500"><sup class="text-[10px]">1</sup> All licenses last forever. Price depends on the purchase method you choose.</p>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </thead>
+    </table>
+    <div class="my-10 flex items-center justify-center text-center align-middle text-white">
+      <div class="flex max-w-sm flex-col">
+        <p class="p-1 text-4xl">Still have questions? <br /> Just ask.</p>
+        <p class="mt-3">Not sure on how Sirius works? Or which option is best for you? Let us know, and we'll do our best. We make it easy to understand.</p>
+        <p class="mt-3 text-center">
+          <a class="text-[#2997ff] hover:underline" href="https://discord.sirius.menu"
+            >Learn more<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="inline-flex h-4 w-4 hover:no-underline">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

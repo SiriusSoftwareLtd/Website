@@ -1,0 +1,42 @@
+---
+import Headers from "./Headers.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en" class="hide-scroll-bar bg-black">
+  <Headers title={frontmatter.pageTitle} description={frontmatter.description} image={frontmatter.heroImage} />
+  <body>
+    <main class="relative overflow-hidden py-8">
+      <article class="prose prose-lg !prose-invert prose-neutral relative mx-auto mt-6 max-w-4xl px-4 py-4 prose-a:text-white prose-img:pointer-events-none prose-img:w-full prose-img:rounded-lg prose-video:w-full prose-video:rounded-lg sm:px-4 lg:px-6">
+        <style>
+          article *:not(img) {
+            max-width: 42rem;
+          }
+
+          article img {
+            max-width: 56rem;
+          }
+        </style>
+        <div class="mx-auto mb-0 mt-0 max-w-2xl">
+          <div class="mx-auto">
+            <h1 class="text-5xl font-semibold text-white">{frontmatter.title}</h1>
+          </div>
+        </div>
+        {
+          frontmatter.description && (
+            <div class="mx-auto mb-0 mt-5 max-w-2xl ">
+              <div class="mx-auto">
+                <p class="!font-sfdisplay text-2xl font-medium leading-7 text-white" set:html={frontmatter.description} />
+              </div>
+            </div>
+          )
+        }
+        {frontmatter.heroImage && <img width={720} height={360} src={frontmatter.heroImage} alt="" />}
+        <div class="prose-lg mx-auto !font-sfdisplay leading-[1.688rem]">
+          <slot />
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

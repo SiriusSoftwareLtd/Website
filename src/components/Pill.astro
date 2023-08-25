@@ -1,0 +1,8 @@
+---
+// Default to "Pro" if no text is provided
+const { text } = Astro.props;
+---
+
+<div class="m-0 flex flex-initial flex-row justify-center border-0 p-0 align-baseline">
+  <span class="!mx-0 mr-2 flex items-center rounded-full border border-solid border-white border-opacity-60 bg-white bg-opacity-10 px-2.5 py-0.5 text-xs font-medium uppercase tracking-normal text-stone-50 text-opacity-60">{text}</span>
+</div>

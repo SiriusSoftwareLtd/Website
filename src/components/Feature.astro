@@ -1,0 +1,42 @@
+---
+const { free, essential, pro, iconName } = Astro.props;
+const size = "w-8 h-8 mb-2";
+const { default: icon } = await import(`../../public/assets/images/svg/icons/${iconName}.svg?raw`);
+
+// if free, essential or pro has - then dont show icon for that feature tier, hidden
+let showFree = null;
+if (free == "-") {
+  showFree = "invisible";
+}
+
+let showEssential = null;
+if (essential == "-") {
+  showEssential = "invisible";
+}
+
+let showPro = null;
+if (pro == "-") {
+  showPro = "invisible";
+}
+---
+
+<tr>
+  <th class="py-5 px-4 text-center text-sm font-normal text-neutral-300 lg:px-6" scope="row">
+    <div class="flex flex-col items-center justify-center text-center">
+      <div set:html={icon} class:list={[showFree, size]} />
+      {free}
+    </div>
+  </th>
+  <th class="py-5 px-4 text-center text-sm font-normal text-neutral-300 lg:px-6" scope="row">
+    <div class="flex flex-col items-center justify-center text-center">
+      <div set:html={icon} class:list={[showEssential, size]} />
+      {essential}
+    </div>
+  </th>
+  <th class="py-5 px-4 text-center text-sm font-normal text-neutral-300 lg:px-6" scope="row">
+    <div class="flex flex-col items-center justify-center text-center">
+      <div set:html={icon} class:list={[showPro, size]} />
+      {pro}
+    </div>
+  </th>
+</tr>
