@@ -14,7 +14,7 @@ We only collect the following information for service-related purposes:
 - **Discord account information**:  
   - Account ID
 - **Roblox account information**:  
-  - User ID. 
+  - User ID
 
 This information is used to assign in-game perks and benefits associated with the services we provide.  
 
