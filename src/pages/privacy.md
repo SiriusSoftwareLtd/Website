@@ -4,81 +4,66 @@ title: Privacy Policy
 pageTitle: Sirius Privacy
 ---
 
-This Privacy Policy describes how Sirius Software Ltd (trading as Sirius) collects, uses, stores, and discloses personal information in compliance with the General Data Protection Regulation (GDPR). Please read this policy carefully to understand how we handle your personal information. By using our services or providing us with your personal information, you consent to the practices described in this policy.
+# You, and your Privacy.
 
-## Data Controller
+This Privacy Policy explains how Sirius collects, uses, stores, and protects your personal information. By using our services, you agree to the practices described in this policy.  
 
-The data controller responsible for the processing of your personal information is Sirius Software Ltd.
+## Data Controller  
+The data controller responsible for your personal information is Sirius Software Ltd.  
 
-## Types of Personal Information Collected
+## What Information We Collect  
+We only collect the following information for service-related purposes:  
+- **Discord account information**:  
+  - ID, username, and other public identifiers.  
+- **Roblox account information**:  
+  - User ID.  
 
-We may collect and process the following types of personal information:
+This information is used to assign in-game perks and benefits associated with the services we provide.  
 
-- Data related to your Discord account
-  - Includes but not limited to:
-    - ID
-    - Username
-    - Discriminator
-    - Avatar
-    - Roles
-- Hardware ID (HWID)
-- IP address
+## How We Collect Your Information  
+We collect your personal information when you authorize the connection to our services, such as through OAuth processes with Discord or Roblox.  
 
-In addition, please note that when making payments, your personal information may be collected and processed by our payment processors, Stripe, and Roblox, according to their respective privacy policies.
+## Why We Collect and Use Your Information  
+We use your information for:  
+- Providing and personalizing our services.  
+- Assigning perks or benefits based on your activity.  
 
-## Collection Methods
+## Data Retention  
+We retain your personal information only as long as necessary to fulfill the purpose for which it was collected. Once the service agreement ends or the data is no longer required, it will be securely deleted.  
 
-We collect personal information through the usage of our application (app).
+## Security Measures  
+We implement reasonable measures to protect your data, including secure storage and limited access. However, no system is completely secure, and we cannot guarantee absolute protection.  
 
-## Purposes of Processing
+## Your Rights Under GDPR  
+As a user, you have the following rights regarding your personal information:  
+- **Right of access**: Request a copy of the data we hold about you.  
+- **Right to rectification**: Request corrections to inaccurate or incomplete data.  
+- **Right to erasure**: Request deletion of your personal data.  
+- **Right to restrict processing**: Request limitations on how your data is used.  
+- **Right to data portability**: Request your data in a portable format.  
+- **Right to object**: Object to the processing of your personal data.  
 
-We collect and process your personal information for the following purposes:
+To exercise your rights, you can submit a ticket via our Discord at [sirius.menu/discord](https://sirius.menu/discord) or email us at shlex@sirius.menu.  
 
-- Providing and personalizing our services
-- Verifying licenses for our products
+## Third-Party Sharing  
+We do not share your personal information with third parties.  
 
-## Third-Party Sharing
+## International Data Transfers  
+Your personal information is not transferred outside our organization.  
 
-We do not share your personal information with any third parties, unless it is required by law or necessary for the performance of our services. However, please note that when making payments, your personal information will be collected and processed by our payment processors, Stripe, and Roblox, in accordance with their respective privacy policies.
+## Cookies and Tracking  
+We do not use cookies or similar tracking technologies on our site.  
 
-## International Data Transfers
+## Age Restrictions  
+Our services are intended for individuals aged 13 and above. We do not knowingly collect information from individuals under this age. If you believe a child has provided information, please contact us immediately.  
 
-We may transfer personal information to developers located outside the European Economic Area (EEA) who work with our databases. We will ensure appropriate safeguards are in place to protect your personal information during such transfers.
+## Complaints  
+If you have concerns about how your personal information is handled, you can contact us directly at shlex@sirius.menu. You also have the right to lodge a complaint with the Information Commissioner’s Office (ICO) if you are dissatisfied with our response.  
 
-## Legal Basis for Processing
+## Updates to this Privacy Policy  
+We may update this Privacy Policy from time to time. The updated policy will be published on this page, and we encourage you to review it periodically.  
 
-The legal basis for processing your personal information is based on the necessity of processing for the performance of our services and the fulfillment of our contractual obligations to you.
+## Contact Information  
+If you have any questions or requests regarding this Privacy Policy, you can reach us at shlex@sirius.menu.  
 
-## Data Retention
-
-We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law.
-
-## Security Measures
-
-We implement reasonable security measures to protect your personal information from unauthorized access, loss, misuse, alteration, or disclosure. These measures include encryption and data access controls. However, please note that no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.
-
-## Age Restrictions
-
-Our services are intended for individuals aged 13 and above. We do not knowingly collect personal information from children under the age of 13. If you are a parent or guardian and believe that your child has provided personal information to us, please contact us using the contact details provided below.
-
-## Cookies and Similar Technologies
-
-We may use cookies or similar technologies to verify licenses and license keys. By using our website or app, you consent to the use of cookies as described in our Cookie Policy.
-
-## User Rights
-
-As an individual whose personal information we process, you have certain rights under the GDPR. These include the right to access, rectify, erase, restrict processing, object to processing, and data portability. To exercise these rights or if you have any questions or concerns regarding the processing of your personal information, please contact us at shlex@sirius.menu.
-
-## Updates to this Privacy Policy
-
-We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We encourage you to review this Privacy Policy periodically to stay informed about how we collect, use, and protect your personal information.
-
-## Contact Information
-
-If you have any questions, comments, or requests regarding this Privacy Policy or our privacy practices, please contact us at shlex@sirius.menu.
-
-<small class="text-muted">
-  This Privacy Policy is effective as of <time datetime="18-05-2023">May 18th 2023</time>
-  <br/>
-  This Privacy Policy was last revised on <time datetime="28-05-2023">May 28th 2023</time>
-</small>
+<small>This Privacy Policy is effective as of **May 18, 2023** and was last updated on **November 19, 2024**.</small>
