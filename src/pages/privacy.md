@@ -12,7 +12,7 @@ The data controller responsible for your personal information is Sirius Software
 ## What Information We Collect  
 We only collect the following information for service-related purposes:  
 - **Discord account information**:  
-  - ID, username, and other public identifiers.  
+  - Account ID
 - **Roblox account information**:  
   - User ID.  
 
