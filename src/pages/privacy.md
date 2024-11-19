@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: You, and your Privacy.
-pageTitle: Sirius Privacy
+pageTitle: Privacy Policy
 ---
 
 This Privacy Policy explains how Sirius collects, uses, stores, and protects your personal information. By using our services, you agree to the practices described in this policy.  
