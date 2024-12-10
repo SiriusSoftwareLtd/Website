@@ -11,10 +11,17 @@ The data controller responsible for your personal information is Sirius.
 
 ## What Information We Collect  
 We only collect the following information for service-related purposes:  
+- **System Information**:
+  - Fingerprint, based off various system properities
 - **Discord account information**:  
   - Account ID
+  - Username
+  - Avatar URL
+  - Boosting Status in our Discord guild
 - **Roblox account information**:  
-  - User ID
+  - Account ID
+  - Username
+  - Avatar URL
 
 This information is used to assign in-game perks and benefits associated with the services we provide.  
 
@@ -64,4 +71,4 @@ We may update this Privacy Policy from time to time. The updated policy will be 
 ## Contact Information  
 If you have any questions or requests regarding this Privacy Policy, you can reach us at shlex@sirius.menu.  
 
-<small>This Privacy Policy is effective as of **May 18, 2023** and was last updated on **November 19, 2024**.</small>
+<small>This Privacy Policy is effective as of **May 18, 2023** and was last updated on **December 10, 2024**.</small>
