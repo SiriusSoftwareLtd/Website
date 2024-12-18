@@ -11,6 +11,7 @@ import SmartDesign from "../components/SmartDesign.astro";
 import Peace from "../components/Peace.astro";
 import Pricing from "../components/Pricing.astro";
 import Footer from "../components/Footer.astro";
+import Posthog from "../components/Posthog.astro";
 export interface Props {
   title: string;
 }
@@ -19,6 +20,7 @@ export interface Props {
 <html lang="en" class="hide-scroll-bar bg-black">
   <Headers title="Sirius" description="Discover the most powerful script, with no boundaries and no compromises. With a range of features and a sleek interface, it's no surprise it's the leader in scripts." image="/assets/images/png/embedBanner.png" />
   <body class="overflow-x-hidden">
+    <Posthog/>
     <Navbar />
     <Intro />
     <GradientIntro />
