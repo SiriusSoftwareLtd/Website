@@ -11,6 +11,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   prefetch: true,
   site: "https://sirius.menu",
+  output: "static",
   integrations: [partytown(), sitemap({ changefreq: 'weekly',
     priority: 0.7}), tailwind()],
 });
