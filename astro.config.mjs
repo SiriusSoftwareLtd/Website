@@ -10,7 +10,7 @@ import tailwind from "@astrojs/tailwind";
 import compress from "astro-compress";
 
 // https://astro.build/config
-
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,5 +19,5 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), compress()]
+  }), compress(), partytown()]
 });
