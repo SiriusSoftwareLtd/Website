@@ -1,5 +1,0 @@
-{
-  "printWidth": 999999999,
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
-  "pluginSearchDirs": false
-}

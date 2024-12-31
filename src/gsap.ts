@@ -392,7 +392,7 @@ const smartDesignTimeline = gsap.timeline({
 });
 
 let soundNotifyPercent, spamNotifyPercent, modNotifyPercent, soundNotifyXPercent, spamNotifyXPercent, modNotifyXPercent;
-if (mm.contexts[0].conditions.is2xl) {
+if (mm.contexts[0].conditions!.is2xl) {
   gsap.set(".notificationBanner", { xPercent: 50, yPercent: 50, left: "50%", opacity: 0 });
   soundNotifyPercent = -110;
   spamNotifyPercent = -50;
@@ -400,7 +400,7 @@ if (mm.contexts[0].conditions.is2xl) {
   soundNotifyXPercent = 0;
   spamNotifyXPercent = -25;
   modNotifyXPercent = 0;
-} else if (mm.contexts[0].conditions.isxl) {
+} else if (mm.contexts[0].conditions!.isxl) {
   gsap.set(".notificationBanner", { xPercent: 50, bottom: 80, left: "50%", opacity: 0 });
   soundNotifyPercent = -110;
   spamNotifyPercent = -50;
@@ -408,7 +408,7 @@ if (mm.contexts[0].conditions.is2xl) {
   soundNotifyXPercent = 0;
   spamNotifyXPercent = -25;
   modNotifyXPercent = 0;
-} else if (mm.contexts[0].conditions.islg) {
+} else if (mm.contexts[0].conditions!.islg) {
   gsap.set(".notificationBanner", { xPercent: 50, yPercent: 50, left: "50%", opacity: 0 });
   soundNotifyPercent = -110;
   spamNotifyPercent = -50;

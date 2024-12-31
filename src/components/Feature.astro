@@ -1,7 +1,8 @@
 ---
 const { free, essential, pro, iconName } = Astro.props;
+const { default: icon } = await import(`../assets/svg/icons/${iconName}.svg?raw`);
+
 const size = "w-8 h-8 mb-2";
-const { default: icon } = await import(`../../public/assets/images/svg/icons/${iconName}.svg?raw`);
 
 // if free, essential or pro has - then dont show icon for that feature tier, hidden
 let showFree = null;

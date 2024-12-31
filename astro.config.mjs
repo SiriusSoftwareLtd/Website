@@ -1,23 +1,16 @@
-import { defineConfig } from "astro/config";
+// @ts-check
+import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-import image from "@astrojs/image";
-import prefetch from "@astrojs/prefetch";
-import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
+import partytown from '@astrojs/partytown';
 
-// https://astro.build/config
-import compress from "astro-compress";
+import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
-import partytown from "@astrojs/partytown";
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sirius.menu/",
-  integrations: [image(), prefetch(), sitemap(), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), compress(), partytown()]
+  prefetch: true,
+  site: "https://sirius.menu",
+  integrations: [partytown(), sitemap({ changefreq: 'weekly',
+    priority: 0.7}), tailwind()],
 });

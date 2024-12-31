@@ -1,2 +1,2 @@
 # Sirius' Website
-This is the code behind [our website](https://sirius.menu).
+The source code behind [our website](https://sirius.menu)!
